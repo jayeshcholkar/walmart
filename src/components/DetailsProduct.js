@@ -15,13 +15,15 @@ const {id} = useParams()
 
 const compare = () => {
   let compareData = getdata.filter((product)=>{
-   return product.id == id
+    //eslint-disable-next-line
+   return product.id == id 
+
   })
   setData(compareData);
 }
-
 useEffect(()=>{
-  compare()
+  compare() 
+  //eslint-disable-next-line
 },[id])
 
 
