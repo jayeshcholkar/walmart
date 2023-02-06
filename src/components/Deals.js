@@ -27,15 +27,15 @@ const send = (e) => {
    return (
     <>
     <h1 className=" text-start max-sm:text-xl ml-5 max-sm:mt-5 text-3xl font-semibold mb-5">Trending Products</h1>
-     <div className="grid grid-cols-3 max-sm:grid-cols-2 items-center mx-10 justify-between gap-6 ">
+     <div className="grid grid-cols-3 max-sm:grid-cols-2 items-center mx-5 justify-between gap-2 ">
      {data.map((element, id)=>{
        return(
          <>
   <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
   <NavLink to={`/detail/${element.id}`}  onClick={()=>send(element)}>
-  <img src={element.imgdata} alt="" className="h-60  max-sm:h-[30vw] w-60 object-cover rounded-lg"/>
+  <img src={element.imgdata} alt="" className="h-[25vw]  max-sm:h-[30vw] w-full object-cover rounded-lg"/>
 </NavLink>
-    <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">{element.rname}</h5>
+    <h5 className="text-gray-900 text-lg leading-tight font-semibold mb-2">{element.rname}</h5>
     <p className="text-gray-700 text-base mb-4">
      Price : $ {element.price}
     </p>

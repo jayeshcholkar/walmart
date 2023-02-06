@@ -4,7 +4,7 @@ import logo11 from "../assets/logo11.png";
 import { FaLayerGroup } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
 import { GoSearch } from "react-icons/go";
-import { MdLogin, MdLogout } from "react-icons/md";
+import { MdAccountCircle, MdLogout } from "react-icons/md";
 import { BiWorld } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
@@ -48,10 +48,12 @@ const Navbar = (props) => {
       <div className="bg-[#0071dc] px-3 py-2 lg:px-8 text-white flex justify-between items-center">
         {/* Left */}
         <div className="flex  items-center gap-x-3 shrink-0">
-          <div className="hover:bg-[#06529a] p-2 rounded-full">
+        <NavLink to={'/'}>
+          <div  className="hover:bg-[#06529a] p-2 rounded-full">
             <img src={logo} alt="" className=" h-12 max-sm:hidden" />
             <img src={logo11} alt="" className=" h-10 sm:hidden" />
           </div>
+          </NavLink>
 
           <div className="md:flex items-center gap-2 hidden hover:bg-[#06529a] p-3 rounded-full">
             <FaLayerGroup className="text-[17px]" />
@@ -63,10 +65,10 @@ const Navbar = (props) => {
           </div>
         </div>
         {/* Middle */}
-        <div className=" relative flex items-center flex-1 mx-6 max-sm:mx-10">
+        <div className=" relative flex items-center flex-1 mx-6 max-sm:mx-1">
           <input
             type="search"
-            className="rounded-full py-1.5 outline-0 flex-1 w-4"
+            className="rounded-full py-1.5 outline-0 flex-1 w-4 "
           />
           <div className="absolute bg-[#ffc220] p-1.5 rounded-full left-1.5">
             <GoSearch className="text-black " />
@@ -75,8 +77,8 @@ const Navbar = (props) => {
         {/* Right */}
         <div className="flex  items-center gap-x-2 max-sm:gap-x-1">
           <div className="hidden lg:flex items-center gap-2 hover:bg-[#06529a] p-3 rounded-full">
-            <MdLogin className="text-[17px] rotate-90" />
-            <p className="text-[16px] font-semibold">Register</p>
+            <MdAccountCircle className="text-[20px]" />
+            <p className="text-[16px] font-semibold">Account</p>
           </div>
           <button onClick={props.handleLogout}>
             <div className="flex items-center gap-2 hover:bg-[#06529a] p-3 rounded-full whitespace-nowrap">
@@ -209,9 +211,11 @@ const Navbar = (props) => {
                               Shipping and taxes calculated at checkout.
                             </p>
                             <div className="mt-6">
-                              <button className="flex items-center justify-center rounded-md border border-transparent bg-[#0071dc] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                            <NavLink to={'/Address'}>
+                              <button onClick={() => setOpen(false)} className="flex items-center justify-center rounded-md border border-transparent bg-[#0071dc] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
                                 Checkout
                               </button>
+                              </NavLink>
                             </div>
                             <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                               <p>

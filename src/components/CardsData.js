@@ -16,7 +16,7 @@ const Cardsdata = [
     },
     {
         id: 2,
-        rname: "Medium Stuff Satchel",
+        rname: "Purse Stuff Satchel",
         imgdata: "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg",
         address: "Street Food",
         somedata: " 2525 + order placed from here recently",
@@ -36,7 +36,7 @@ const Cardsdata = [
     },
     {
         id: 4,
-        rname: "Men Suites",
+        rname: "JACK & JONES Suit",
         imgdata: costume,
         address: "Momos",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -48,7 +48,7 @@ const Cardsdata = [
     },
     {
         id: 5,
-        rname: "Deim Jacket For Woman",
+        rname: "PUMA Jacket",
         imgdata: two,
         address: "North Indian",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
@@ -96,7 +96,7 @@ const Cardsdata = [
     },
     {
         id: 9,
-        rname: "Boat Rockerz 255 Pro Bluetooth Handsets",
+        rname: "Boat Rockerz 255",
         imgdata: 'https://cdn.shopify.com/s/files/1/0083/6380/2720/products/BoatRockerz255ProBluetoothHandsets-BLC_540x.webp?v=1658390916',
         address: "Burger, Sandwich, Fast Food",
         delimg: "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function DetailsProduct() {
@@ -191,9 +191,11 @@ useEffect(()=>{
                 <span className="title-font font-medium text-2xl text-gray-900"> Price :
                   ${product.price}
                 </span>
-                <button className="flex ml-auto text-white bg-[#0071dc] border-0 py-2 px-6 focus:outline-none hover:bg-[#0071dc] rounded">
+                <NavLink to={'/Address'}>
+                <button className="flex ml-10 text-white bg-[#0071dc] border-0 py-2 px-6 focus:outline-none hover:bg-[#0071dc] rounded">
                   Buy Now
                 </button>
+                </NavLink>
                 <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <svg
                     fill="currentColor"

@@ -6,6 +6,7 @@ import DetailsProduct from "./components/DetailsProduct";
 import { useState, useEffect } from "react";
 import fire from "./fire";
 import Login from "./components/Login";
+import Address from "./components/Address";
 
 function App() {
   const [user, setUser] = useState("");
@@ -93,6 +94,7 @@ function App() {
       <Routes>
         <Route path="/detail/:id" element={<DetailsProduct />} />
         <Route path="/" element={<Home />} />
+        <Route path="/Address" element={<Address />} />
       </Routes>
       <Footer />
       </>
