@@ -212,7 +212,7 @@ const Navbar = (props) => {
                             </p>
                             <div className="mt-6">
                             <NavLink to={'/Address'}>
-                              <button onClick={() => setOpen(false)} className="flex items-center justify-center rounded-md border border-transparent bg-[#0071dc] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                              <button onClick={() => setOpen(false)} className="flex items-center justify-center rounded-md border border-transparent bg-[#0071dc] px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-[#0267c5]">
                                 Checkout
                               </button>
                               </NavLink>
@@ -222,10 +222,10 @@ const Navbar = (props) => {
                                 or
                                 <button
                                   type="button"
-                                  className="font-medium text-indigo-600 hover:text-indigo-500"
+                                  className="font-medium text-indigo-600 hover:text-indigo-500 ml-1"
                                   onClick={() => setOpen(false)}
                                 >
-                                  Continue Shopping
+                                   Continue Shopping
                                   <span aria-hidden="true"> &rarr;</span>
                                 </button>
                               </p>

@@ -8,11 +8,14 @@ function Address() {
    const [value, setValue] = useState()
    return (
     <div>
-       <div className="flex justify-center w-[100%] h-[100vh] bg-[#f0eef3] mt-[4%]">
-        <div className="flex flex-col top-[30%] bg-white shadow-lg border-silver border-[2px] rounded-lg p-5 w-[75%]">
+       <div className="flex justify-center w-[100%] h-[100%] bg-[#f0eef3] mt-[4%]">
+        <div className="flex flex-col top-[30%] bg-white shadow-lg border-silver border-[2px] rounded-lg p-5 w-[75%] max-sm:w-[90%]">
           <text className="text-2xl ">Address</text>
 
           {/* First Name Last Name */}
+          <form 
+           method="POST"
+          action="https://getform.io/f/cb5bab2d-19ed-4bf4-a0b7-90597e715e8c">
           <div className="flex mt-7">
             <input
               className={ inputStyle + ` mt-2 w-[50%]`}
@@ -36,7 +39,7 @@ function Address() {
           <div className="flex mt-7">
             <input
               className={ inputStyle + ` w-[100%]`}
-              name="pass"
+              name="Address1"
               type="Address"
               placeholder="Address line 1"
              
@@ -45,7 +48,7 @@ function Address() {
           <div className="flex mt-7">
             <input
               className={ inputStyle + ` w-[100%]`}
-              name="pass"
+              name="Address2"
               type="Address"
               placeholder="Address line 2"
              
@@ -53,8 +56,8 @@ function Address() {
           </div>
           <div className="flex mt-7">
             <input
-              className={ inputStyle + ` w-[10%]`}
-              name="Postal code"
+              className={ inputStyle + ` w-[15%] max-sm:w-[30%] `}
+              name="Postalcode"
               type="Postal code"
               placeholder="Postal code"
              
@@ -63,19 +66,19 @@ function Address() {
 {/* Phone numes */}
 <div className="flex mt-7">
 <PhoneInput
-      className={ inputStyle + ` w-[30%]`}
+      name="number"
+      className={ inputStyle + ` w-[30%] max-sm:w-[60%]`}
       placeholder="Enter phone number"
       value={value}
       onChange={setValue}/>
 </div>
 
           {/* Submit button */}
-          <input
-            type="button"
-            className="mt-5 text-white bg-[#0071dc] rounded-[1rem] hover:bg-[#045bac] ease-in duration-100 shadow-md p-3 w-28"
-            value="Order now"
+          <button className="mt-5 flex text-white bg-[#0071dc] border-0 py-2 px-6 focus:outline-none hover:bg-[#0467c4] rounded">Place your order</button>
             
-          />
+            
+          
+        </form>
         </div>
       </div>
       </div>
